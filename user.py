@@ -17,11 +17,11 @@ class User:
         self.gold_card_points = 200
         return self
     
-    def spend_points(self):
-        self.gold_card_points = self.gold_card_points * (1.00 - .40)
+    def spend_points(self, amount):
+        self.gold_card_points = self.gold_card_points * (1.00 - amount)
         return self
     
-    
+
         
 user= User({
     'first_name': 'Susie',
@@ -45,7 +45,7 @@ user3= User({
 user.enroll()
 user2.enroll()
 
-user2.spend_points()
+user2.spend_points(.4)
 
 user.display_info()
 user2.display_info()
