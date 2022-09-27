@@ -10,16 +10,16 @@ sports_directory = {
     'soccer' : ['Messi', 'Ronaldo', 'Rooney']
 }
 z = [ {'x': 10, 'y': 20} ]
+
 x[1][0]= 15
 print(x)
 students[0]["last_name"]="Bryant"
 print(students)
 sports_directory["soccer"][0]="Andres"
 print(sports_directory)
-z[1][0]=30
-print(z)
+z[0]["y"]=30
 
-# # ITERATE THROUGH A LIST OF DICTIONARIES
+# # # ITERATE THROUGH A LIST OF DICTIONARIES
 students = [
     {'first_name':  'Michael', 'last_name' : 'Jordan'},
     {'first_name' : 'John', 'last_name' : 'Rosales'},
@@ -32,7 +32,7 @@ def iterateDictionary(some_list):
 
 iterateDictionary(students)
 
-# GET VALUES THROUGH A LIST OF DICTIONARIES
+# # GET VALUES THROUGH A LIST OF DICTIONARIES
 
 
 def iterateDictionary2(key_name, some_list):
@@ -43,7 +43,7 @@ iterateDictionary2("first_name",students)
 
 iterateDictionary2("last_name", students)
 
-# ITERATE THROUGH A DICTIONARY WITH LIST VALUES
+# # ITERATE THROUGH A DICTIONARY WITH LIST VALUES
 
 dojo = {
     'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
@@ -52,32 +52,32 @@ dojo = {
 
 def printInfo(some_dict):
     for key, value in dojo.items():
-        print(key, value)
+        print(key,value)
 
 printInfo(dojo)
 
 
 
 
-# # output:
-# 7 LOCATIONS
-# San Jose
-# Seattle
-# Dallas
-# Chicago
-# Tulsa
-# DC
-# Burbank
+# # # output:
+# # 7 LOCATIONS
+# # San Jose
+# # Seattle
+# # Dallas
+# # Chicago
+# # Tulsa
+# # DC
+# # Burbank
     
-# 8 INSTRUCTORS
-# Michael
-# Amy
-# Eduardo
-# Josh
-# Graham
-# Patrick
-# Minh
-# Devon
+# # 8 INSTRUCTORS
+# # Michael
+# # Amy
+# # Eduardo
+# # Josh
+# # Graham
+# # Patrick
+# # Minh
+# # Devon
 
 
 
